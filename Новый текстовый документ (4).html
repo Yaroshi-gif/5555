@@ -1,0 +1,147 @@
+<meta charset="UTF-8">
+<head>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        .nebo {
+            background: aqua;
+            position: relative;
+            width: 100vw;
+            height: 180px;
+        }
+        .solnshe {
+            background: yellow;
+            position: absolute;
+            z-index: 2;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            top: 20px;
+            right: 50px;
+        }
+        .derevo2 {
+            background: green;
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            margin-bottom: -40px;
+            position: relative;
+            top: 15px;
+            left: 20px;
+            z-index: 2;
+        }
+        .derevo {
+            background: brown;
+            height: 100px;
+            width: 30px;
+            margin-left: 35px;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+        .road {
+            background: rgb(48, 48, 48);
+            position: relative;
+            width: 100vw;
+            height: 150px;
+        }
+        .carfull {
+            position: absolute;
+            width: 200px;
+            height: 110px;
+            top: -50px;
+            left: -200px;
+            animation: drive 5s forwards linear;
+        }
+        .car1 {
+            background: red;
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            z-index: 3;
+            width: 200px;
+            height: 50px;
+        }
+        .car2 {
+            background: red;
+            position: absolute;
+            bottom: 70px;
+            left: 45px;
+            z-index: 3;
+            width: 100px;
+            height: 40px;
+        }
+        .okno1 {
+            background: aquamarine;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            z-index: 4;
+            width: 70px;
+            height: 30px;
+        }
+        .coleso1 {
+            background: black;
+            position: absolute;
+            bottom: 0;
+            z-index: 4;
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            left: 25px;
+        }
+        .coleso2 {
+            background: black;
+            position: absolute;
+            bottom: 0;
+            z-index: 4;
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            right: 15px;
+        }
+        .disk {
+            background: gray;
+            z-index: 5;
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+        }
+        @keyframes drive {
+            to {
+                left: calc(100vw - 250px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nebo">
+        <div class="solnshe"></div>
+            <div class="derevo2"></div>
+            <div class="derevo"></div>
+        </div>
+    </div>
+    <div class="road">
+        <div class="carfull">
+            <div class="car2">
+                <div class="okno1"></div>
+            </div>
+            <div class="car1"></div>
+            <div class="coleso1">
+                <div class="disk"></div>
+            </div>
+            <div class="coleso2">
+                <div class="disk"></div>
+            </div>
+        </div>
+    </div>
